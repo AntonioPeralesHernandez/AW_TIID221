@@ -1,0 +1,28 @@
+h1 {
+    color: blue;
+    font-size: 100px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.seccion {
+    background-color: lightgreen;
+
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    margin: 20px;
+    border: 3px solid black;
+}
+.seccion2 {
+    background-color: lightblue;
+
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    margin: 20px;
+    border: 3px solid rgb(204, 21, 134);
+}
