@@ -50,7 +50,6 @@ $row = mysqli_fetch_array($query);
 
     // Comprobar si se presionó el botón
     if(isset($_POST['actualizar'])){
-
         // Recibir los datos del formulario
         $id = $_POST['id'];
         $matricula = $_POST['matricula'];
@@ -58,7 +57,6 @@ $row = mysqli_fetch_array($query);
         $apellido_p = $_POST['apellido_p'];
         $apellido_m = $_POST['apellido_m'];
         $edad = $_POST['edad'];
-
         // Actualizar los datos del alumno
         $sql = "UPDATE alumnos SET
         matricula='$matricula',
@@ -67,10 +65,8 @@ $row = mysqli_fetch_array($query);
         apellido_m='$apellido_m',
         edad='$edad'
         WHERE id='$id'";
-
         // Ejecutar la consulta
         $query = mysqli_query($con, $sql);
-
         // Comprobar y direccionar
         if($query){
             header("Location: alumnos.php");
@@ -79,10 +75,7 @@ $row = mysqli_fetch_array($query);
         else{
             echo "Error al actualizar los datos";
         }
-
     }
-
     ?>
-
 </body>
 </html>
